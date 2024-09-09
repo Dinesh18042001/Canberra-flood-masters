@@ -91,3 +91,10 @@
         margin-top: 0px;
     }
 }
+
+@media(min-width:991px){
+    .navbar-nav .dropdown:hover .custome-dropdown-menu{
+        display: block;
+    }
+}
+
