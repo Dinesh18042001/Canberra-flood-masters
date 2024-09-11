@@ -58,3 +58,49 @@ $(document).ready(function() {
     });
 });
 
+
+
+
+$(document).ready(function() {
+
+    $('.counter').each(function () {
+    $(this).prop('Counter',0).animate({
+    Counter: $(this).text()
+    }, {
+    duration: 4000,
+    easing: 'swing',
+    step: function (now) {
+    $(this).text(Math.ceil(now));
+    }
+    });
+    });
+    
+    });
+
+
+
+
+    $('.testimonial-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: [
+            "<i class='fa-solid fa-arrow-left'></i>",
+            "<i class='fa-solid fa-arrow-right'></i>",
+        ],
+        autoplay: true,            
+        autoplayTimeout: 3000,       
+        autoplayHoverPause: true,   
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+
